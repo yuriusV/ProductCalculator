@@ -1,0 +1,14 @@
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/WebApi.deps.json
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/WebApi.runtimeconfig.json
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/WebApi.runtimeconfig.dev.json
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/WebApi.dll
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/WebApi.pdb
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.csprojAssemblyReference.cache
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.csproj.CoreCompileInputs.cache
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.RazorAssemblyInfo.cache
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.RazorAssemblyInfo.cs
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.AssemblyInfoInputs.cache
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.AssemblyInfo.cs
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.RazorTargetAssemblyInfo.cache
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.dll
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.pdb
