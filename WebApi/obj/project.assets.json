@@ -12074,8 +12074,8 @@
     },
     "SaleTerminal/1.0.0": {
       "type": "project",
-      "path": "../Core/SaleTerminal.csproj",
-      "msbuildProject": "../Core/SaleTerminal.csproj"
+      "path": "../SaleTerminal/SaleTerminal.csproj",
+      "msbuildProject": "../SaleTerminal/SaleTerminal.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12114,8 +12114,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj": {
-              "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj"
+            "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj": {
+              "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj"
             }
           }
         }

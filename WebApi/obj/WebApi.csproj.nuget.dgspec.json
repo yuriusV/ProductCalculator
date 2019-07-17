@@ -4,14 +4,14 @@
     "/home/yuriusv/Documents/projects/SaleTerminal/WebApi/WebApi.csproj": {}
   },
   "projects": {
-    "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj": {
+    "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj",
+        "projectUniqueName": "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj",
         "projectName": "SaleTerminal",
-        "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj",
+        "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj",
         "packagesPath": "/home/yuriusv/.nuget/packages/",
-        "outputPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/obj/",
+        "outputPath": "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj": {
-                "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj"
+              "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj": {
+                "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/SaleTerminal/SaleTerminal.csproj"
               }
             }
           }

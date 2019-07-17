@@ -11,7 +11,7 @@ namespace WebApi.Services
 			_terminal = new PointOfSaleTerminal();
 			_pricesRepository = pricesRepository;
 		}
-		public decimal CalculatePrice(IEnumerable<string> inputs) {
+		public decimal? CalculatePrice(IEnumerable<string> inputs) {
 			_terminal.SetPricing(_pricesRepository.GetPrices());
 			foreach(var productName in inputs) {
 				_terminal.Scan(productName);

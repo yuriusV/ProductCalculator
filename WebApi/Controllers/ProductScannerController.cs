@@ -20,7 +20,11 @@ namespace WebApi.Controllers
         [HttpPost]
         public ActionResult CalculatePrice([FromBody] IEnumerable<string> products)
         {
-			return new JsonResult(_pointOfSaleTerminalService.CalculatePrice(products));
+			var price = _pointOfSaleTerminalService.CalculatePrice(products);
+			if (price == null) {
+				return new JsonResult(new {Success=false, ErrorMessage="Not all products exists in price list", Data=0m});
+			}
+			return new JsonResult(new {Success=true, ErrorMessage="", Data = price});
         }
     }
 }

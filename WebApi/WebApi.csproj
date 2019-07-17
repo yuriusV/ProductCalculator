@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\SaleTerminal.csproj" />
+    <ProjectReference Include="..\SaleTerminal\SaleTerminal.csproj" />
   </ItemGroup>
 
 </Project>
