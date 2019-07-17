@@ -1,5 +1,5 @@
 
-using TPriceMeasure = System.Double;
+using TPriceMeasure = System.Decimal;
 using TProduct = System.String;
 
 

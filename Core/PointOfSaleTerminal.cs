@@ -29,11 +29,11 @@ namespace SaleTerminal
 			_products.AddLast(productName);
 		}
 
-		public double CalculateTotal()
+		public decimal CalculateTotal()
 		{
 			var moneyResult = _simpleCalculator.TakeSuitableProducts(_pricing,
 				_packsCalculator.TakeSuitableProducts(_pricing,
-					new CalculateState(0, _products))
+					new CalculateState(0m, _products))
 			).Money;
 
 			ResetInitialState();

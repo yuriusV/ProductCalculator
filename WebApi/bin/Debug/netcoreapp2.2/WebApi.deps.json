@@ -26,13 +26,22 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "SaleTerminal": "1.0.0"
         },
         "runtime": {
           "WebApi.dll": {}
         },
         "compile": {
           "WebApi.dll": {}
+        }
+      },
+      "SaleTerminal/1.0.0": {
+        "runtime": {
+          "SaleTerminal.dll": {}
+        },
+        "compile": {
+          "SaleTerminal.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3233,6 +3242,11 @@
   },
   "libraries": {
     "WebApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SaleTerminal/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

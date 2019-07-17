@@ -12,7 +12,7 @@ namespace SaleTerminal
 			IEnumerable<Price> pricing, 
 			CalculateState calculateState)
 		{
-			double totalPrice = calculateState.LeftProducts.Sum(product => {
+			decimal totalPrice = calculateState.LeftProducts.Sum(product => {
 				var simplePrice = pricing.FirstOrDefault(price => 
 					(price is SimplePrice) 
 					&& price.Product.Equals(product)) as SimplePrice;

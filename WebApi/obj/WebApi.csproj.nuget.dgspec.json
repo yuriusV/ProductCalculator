@@ -4,6 +4,56 @@
     "/home/yuriusv/Documents/projects/SaleTerminal/WebApi/WebApi.csproj": {}
   },
   "projects": {
+    "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj",
+        "projectName": "SaleTerminal",
+        "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj",
+        "packagesPath": "/home/yuriusv/.nuget/packages/",
+        "outputPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/yuriusv/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "/home/yuriusv/Documents/projects/SaleTerminal/WebApi/WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +77,11 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj": {
+                "projectPath": "/home/yuriusv/Documents/projects/SaleTerminal/Core/SaleTerminal.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

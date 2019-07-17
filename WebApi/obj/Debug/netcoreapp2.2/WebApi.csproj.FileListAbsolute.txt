@@ -12,3 +12,6 @@
 /home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.RazorTargetAssemblyInfo.cache
 /home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.dll
 /home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.pdb
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/SaleTerminal.dll
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/bin/Debug/netcoreapp2.2/SaleTerminal.pdb
+/home/yuriusv/Documents/projects/SaleTerminal/WebApi/obj/Debug/netcoreapp2.2/WebApi.csproj.CopyComplete

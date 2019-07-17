@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using WebApi.Interfaces;
+using WebApi.Services;
 
 namespace WebApi
 {
@@ -24,7 +26,9 @@ namespace WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
-			
+			services.AddScoped<IPointOfSaleTerminalService, PointOfSaleTerminalService>();
+			services.AddSingleton<IPricesRepository, InMemoryPricesRepository>();
+			services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -38,7 +42,7 @@ namespace WebApi
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+			app.UseMvc();
         }
     }
 }
