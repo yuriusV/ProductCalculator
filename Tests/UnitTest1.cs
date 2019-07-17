@@ -49,8 +49,15 @@ namespace Tests
 				new ProductPackPrice(productName, countProducts, productPrice)
 			});
 			_terminal.Scan(productName);
+			_terminal.Scan(productName);
+			_terminal.Scan(productName);
 
             Assert.That(_terminal.CalculateTotal() == productPrice);
         }
+
+		[Test]
+		public void Combination1WorksCorrect(string productName) {
+
+		}
     }
 }
