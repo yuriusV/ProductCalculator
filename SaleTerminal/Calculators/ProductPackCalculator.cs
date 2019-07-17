@@ -14,32 +14,46 @@ namespace SaleTerminal
 			var productGroups = calculateState.LeftProducts.GroupBy(x => x)
 				.ToDictionary(x => x.Key, x => x.Count());
 			var pricingGroupedAroundProduct = pricing.GroupBy(x => x.Product);
-			decimal moneyTaken = 0m;
 
-			foreach (var productPricing in pricingGroupedAroundProduct)
-			{
-				foreach (var priceVariant in GetSortedByProfitPackPrices(productPricing))
-				{
-					var productGroupsForVariant = productGroups.Keys.Where(productName => productName == priceVariant.Product
-						&& productGroups[productName] >= priceVariant.CountProducts).ToList();
 
-					foreach (var product in productGroupsForVariant)
-					{
-						while (productGroups[product] >= priceVariant.CountProducts)
-						{
-							productGroups[product] -= priceVariant.CountProducts;
-							moneyTaken += priceVariant.PriceForPack;
-						}
-					}
+			var calculatingResult = productGroups.AsParallel().Select(product => {
+				var productPricings = GetPricesToCheckForProduct(product.Key, pricingGroupedAroundProduct);
+				return TakeProduct(product.Key, product.Value, productPricings);
+			}).Aggregate(
+				(leftProducts: Enumerable.Empty<TProduct>(), moneyReceived: 0m), 
+				(state, current) => (
+					state.leftProducts.Concat(Enumerable.Repeat(current.product, current.countProductsLeft)), 
+					state.moneyReceived + current.moneyReceived
+				)
+			);
+			
+			return new CalculateState(calculateState.Money + calculatingResult.moneyReceived, 
+				calculatingResult.leftProducts);
+		}
+
+		private (TProduct product, int countProductsLeft, decimal moneyReceived) TakeProduct(
+			TProduct product,
+			int countLeft,
+			IEnumerable<ProductPackPrice> packedPrices) 
+		{
+			decimal moneyReceived = 0m;
+
+			foreach(var price in packedPrices) {
+				if (countLeft >= price.CountProducts) {
+					// Use all available pack blocks.
+					moneyReceived += (countLeft / price.CountProducts) * price.PriceForPack;
+					countLeft = countLeft % price.CountProducts;
 				}
 			}
+			
+			return (product, countLeft, moneyReceived);
+		}
 
-			var leftProducts = new List<TProduct>();
-			foreach (var key in productGroups.Keys)
-			{
-				leftProducts.AddRange(Enumerable.Repeat(key, productGroups[key]));
-			}
-			return new CalculateState(calculateState.Money + moneyTaken, leftProducts);
+		private IEnumerable<ProductPackPrice> GetPricesToCheckForProduct(TProduct product, IEnumerable<IGrouping<TProduct, Price>> pricingGroupedAroundProduct) {
+			return GetSortedByProfitPackPrices(
+				pricingGroupedAroundProduct.FirstOrDefault(priceItem => priceItem.Key == product) 
+					?? Enumerable.Empty<Price>() 
+			);
 		}
 
 		private IEnumerable<ProductPackPrice> GetSortedByProfitPackPrices(IEnumerable<Price> prices)

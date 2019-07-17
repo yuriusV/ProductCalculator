@@ -111,6 +111,17 @@ namespace Tests
 		}
 
 		[Test]
+		public void Combination3IsCalculatingCorrect()
+		{
+			var pricing = GetSimplePricelist();
+
+			_terminal.SetPricing(pricing);
+
+			ScanProducts(_terminal, "A", "B", "C", "D");
+			Assert.AreEqual(_terminal.CalculateTotal(), 7.25m);
+		}
+
+		[Test]
 		public void TestThatInstanceCanCorrectProcesTwoSequntialCalculatings()
 		{
 			Combination1IsCalculatingCorrect();
