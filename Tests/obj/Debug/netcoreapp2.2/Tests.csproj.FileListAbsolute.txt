@@ -1,0 +1,17 @@
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.csprojAssemblyReference.cache
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.csproj.CoreCompileInputs.cache
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.AssemblyInfoInputs.cache
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.AssemblyInfo.cs
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/Tests.deps.json
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/Tests.runtimeconfig.json
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/Tests.runtimeconfig.dev.json
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/Tests.dll
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/Tests.pdb
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/SaleTerminal.dll
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/bin/Debug/netcoreapp2.2/SaleTerminal.pdb
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.csproj.CopyComplete
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.dll
+/home/yuriusv/Documents/projects/SaleTerminal/Tests/obj/Debug/netcoreapp2.2/Tests.pdb
